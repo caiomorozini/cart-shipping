@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "cartme-shipping-fastapi"
+version = "0.1.0"
+description = ""
+authors = ["caiomorozini <caio@infranology.com.br>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.70.1"
+uvicorn = {extras = ["standard"], version = "^0.16.0"}
+pycep-correios = "^5.0.0"
+pycorreios = {git = "https://github.com/devmmaia/pycorreios.git"}
+beautifulsoup4 = "^4.10.0"
+pytest = "^6.2.5"
+pandas = "^1.3.5"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
